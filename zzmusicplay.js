@@ -16,7 +16,7 @@ if (body) {
       // 固定歌手名称
       obj.data.song_singer = "z先生定制电台>>>";
       // 修改封面为指定链接
-      obj.data.cover = "https://github.com/zxs-ai/Xnet/blob/main/pic/zxs-pic.png";
+      obj.data.cover = "https://github.com/zxs-ai/Xnet/blob/main/pic/zz.jpg";
     }
     $done({body: JSON.stringify(obj)});
   } catch (e) {
