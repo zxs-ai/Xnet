@@ -1,3 +1,9 @@
+/*
+ * zzmusicplay.js
+ * 此脚本用于重写 api.dragonlongzhu.cn 接口返回的 JSON 数据，
+ * 将歌曲名称与歌手名称拼接，将歌手替换为固定文本，
+ * 并将封面修改为指定链接。
+ */
 let body = $response.body;
 if (body) {
   try {
@@ -5,12 +11,12 @@ if (body) {
     if (obj && obj.data) {
       let originalName = obj.data.song_name || "";
       let originalSinger = obj.data.song_singer || "";
-      
+      // 拼接歌曲名与歌手名
       obj.data.song_name = originalName + "-" + originalSinger;
-      // 将歌手改为固定文本“点击播放—>”
+      // 固定歌手名称
       obj.data.song_singer = "z先生定制电台>>>";
       // 修改封面为指定链接
-      obj.data.cover = "https://github.com/zxs-ai/Xnet/blob/main/pic/zxs-pic.png";
+      obj.data.cover = "https://gitee.com/applexyz/iosgj/raw/master/%E7%B4%A0%E6%9D%90%E6%96%87%E4%BB%B6/zxs-pic.jpeg";
     }
     $done({body: JSON.stringify(obj)});
   } catch (e) {
