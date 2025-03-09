@@ -19,7 +19,7 @@ if (body) {
       // 将歌手改为固定文本“点击播放—>”
       obj.data.song_singer = "z先生定制电台>>>";
       // 修改封面为指定链接
-      obj.data.cover = "http://raw.githubusercontent.com/zxs-ai/Xnet/refs/heads/main/pic/zxs-pic.png";
+      obj.data.cover = "http://q4.qlogo.cn/headimg_dl?dst_uin=719883788&spec=640";
     }
     $done({body: JSON.stringify(obj)});
   } catch (e) {
