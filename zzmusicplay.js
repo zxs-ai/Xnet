@@ -18,7 +18,7 @@ if (body) {
       // 固定歌手名称
       obj.data.song_singer = "z先生定制电台>>>";
       // 修改封面为指定链接
-      obj.data.cover = "http://fmc-75014.picgzc.qpic.cn/consult_viewer_pic__cff92031-5429-42d4-a3fe-5ddcd20b13b6_1741445606820.jpg";
+      obj.data.cover = "https://s3.bmp.ovh/imgs/2025/03/09/651d43a16b859ad2.jpg";
     }
     $done({body: JSON.stringify(obj)});
   } catch (e) {
