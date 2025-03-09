@@ -9,6 +9,7 @@ if (body) {
   try {
     let obj = JSON.parse(body);
     if (obj && obj.data) {
+      
       let originalName = obj.data.song_name || "";
       let originalSinger = obj.data.song_singer || "";
       // 拼接歌曲名与歌手名
